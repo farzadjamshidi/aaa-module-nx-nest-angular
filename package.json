@@ -2,7 +2,11 @@
   "name": "@aaa-module-nx-nest-angular/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "serve:api": "npx nx serve api",
+    "serve:web": "npx nx serve aaa-module-nx-nest-angular --open",
+    "serve:all": "concurrently \"npm run serve:api\" \"npm run serve:web\""
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~16.0.0",
@@ -50,6 +54,7 @@
     "@types/node": "~18.7.1",
     "@typescript-eslint/eslint-plugin": "^5.58.0",
     "@typescript-eslint/parser": "^5.58.0",
+    "concurrently": "^8.2.0",
     "cypress": "^12.11.0",
     "eslint": "~8.15.0",
     "eslint-config-prettier": "8.1.0",
