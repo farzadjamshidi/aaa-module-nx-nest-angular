@@ -62,3 +62,4 @@ Nx comes with local caching already built-in (check your `nx.json`). On CI you m
 
 yarn add convict
 yarn add -D @types/convict
+yarn add pg typeorm @nestjs/typeorm
